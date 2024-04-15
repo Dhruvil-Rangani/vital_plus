@@ -13,6 +13,7 @@ import Consultation from "./pages/nurse/Consultation";
 import NurseDashboard from "./pages/nurse/NurseDashboard";
 import Patient from "./pages/nurse/Patient";
 import PatientDashboard from "./pages/patient/PatientDashboard";
+import DiagnosisApp from "./components/Diagnosis";
 import useAuth from "./utils/useAuth";
 
 const endpoints = ["/", "/login", "/register"];
@@ -47,6 +48,8 @@ function App() {
             <Route path="/nurse/add-patient" element={<AddPatient />} />
             <Route path="/nurse/patient/:id" element={<Patient />} />
             <Route path="/nurse/consultation" element={<Consultation />} />
+            {/* Change the path as you see fit */}
+            <Route path="/diagnosis" element={<DiagnosisApp />} />
           </Routes>
         </section>
       </main>
